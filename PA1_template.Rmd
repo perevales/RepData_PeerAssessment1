@@ -1,10 +1,4 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
+# Reproducible Research: Peer Assessment 1
 
 ## Loading and preprocessing the data
 
@@ -94,7 +88,7 @@ mean(steps.day$steps)
 median(steps.day$steps)
 ```
 
-The impact of imputing missing data on the estimates of the total daily number of steps is that the mean and median are higher with imputation than without it
+The impact of imputing missing data on the estimates of the total daily number of steps is that the mean and median are slightly higher with imputation than without it
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

@@ -1,10 +1,4 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
+# Reproducible Research: Peer Assessment 1
 
 ## Loading and preprocessing the data
 
@@ -131,16 +125,6 @@ Install and load mice package
 library(mice)
 ```
 
-```
-## Warning: package 'mice' was built under R version 3.1.2
-```
-
-```
-## Loading required package: Rcpp
-## Loading required package: lattice
-## mice 2.22 2014-06-10
-```
-
 Perform Multiple Imputation. Create a new dataset that is equal to the original dataset but with the missing data filled in
 
 ```r
@@ -209,7 +193,7 @@ median(steps.day$steps)
 ## [1] 11352
 ```
 
-The impact of imputing missing data on the estimates of the total daily number of steps is that the mean and median are higher with imputation than without it
+The impact of imputing missing data on the estimates of the total daily number of steps is that the mean and median are slightly higher with imputation than without it
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -238,7 +222,7 @@ mean(steps.day$steps[indx.weekend])
 ```
 
 ```
-## [1] 12336.25
+## [1] NaN
 ```
 
 Steps mean of no weekends days
@@ -248,7 +232,7 @@ mean(steps.day$steps[-indx.weekend])
 ```
 
 ```
-## [1] 11045.55
+## [1] NaN
 ```
 
 According to these results it seems the number of steps during weekends is higher.
