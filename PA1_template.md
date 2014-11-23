@@ -125,6 +125,16 @@ Install and load mice package
 library(mice)
 ```
 
+```
+## Warning: package 'mice' was built under R version 3.1.2
+```
+
+```
+## Loading required package: Rcpp
+## Loading required package: lattice
+## mice 2.22 2014-06-10
+```
+
 Perform Multiple Imputation. Create a new dataset that is equal to the original dataset but with the missing data filled in
 
 ```r
@@ -222,7 +232,7 @@ mean(steps.day$steps[indx.weekend])
 ```
 
 ```
-## [1] NaN
+## [1] 12336.25
 ```
 
 Steps mean of no weekends days
@@ -232,7 +242,7 @@ mean(steps.day$steps[-indx.weekend])
 ```
 
 ```
-## [1] NaN
+## [1] 11045.55
 ```
 
 According to these results it seems the number of steps during weekends is higher.
